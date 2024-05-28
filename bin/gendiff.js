@@ -2,6 +2,7 @@
 
 import { Command } from 'commander';
 import { pathFile } from '../src/index.js';
+// import { genDiff } from '../src/index.js';
 
 const program = new Command();
 
@@ -12,7 +13,8 @@ program
  .description('Compares two configuration files and shows a difference.')
  .option('-f, --format [type]', 'output format') 
  .action((one, two) => {
-    pathFile(one, two);
+   console.log(pathFile(one, two));
+    //genDiff(one, two)
  });
 
  program.parse();
