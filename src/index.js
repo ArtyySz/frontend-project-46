@@ -10,7 +10,7 @@ function readFile(filepath) {
   return JSON.parse(fs.readFileSync(pathF));
 }
 
-export function pathFile(filepath1, filepath2) {
+export default function pathFile(filepath1, filepath2) {
   const one = readFile(filepath1);
   const two = readFile(filepath2);
   // console.log(one, two); // return [file1, file2]
