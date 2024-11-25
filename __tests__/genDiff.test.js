@@ -149,7 +149,7 @@ describe('createDiff', () => {
   });
 });
 
-describe('genDiff', () => {
+describe('pathFile', () => {
   it('Выводит false в случае неправильного расширения файла', () => {
     const diff1 = pathFile('__fixtures__/file1.json', '__fixtures__/file2.json', 'stylish');
     expect(diff1).toBeTruthy();
